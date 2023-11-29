@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Outros elementos */
+
+  button {
+    border: 1px solid #000;
+  }
+  
+  /* Outros elementos */
+
+  :root {
+    --cor-primaria: #0074b8;
+    --cor-secundaria: #ff9900;
+    --fonte-principal: Arial, sans-serif;
+    --tamanho-fonte: 16px;
+  }
+  
+  /* Use as variáveis nos elementos */
+  body {
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-fonte);
+  }
+  
+  /* Outros estilos */
+
+  <button id="open-menu">Abrir Menu</button>
+<button id="close-menu">Fechar Menu</button>
+
+/* Esconda o menu de navegação e o botão de fechar inicialmente */
+#menu, #close-menu {
+    display: none;
+  }
+  
+  /* Mostrar o botão de abrir quando o input estiver checado */
+  #open-menu {
+    display: block;
+  }
+  
+  /* Quando o input estiver checado, mostre o menu de navegação e o botão de fechar */
+  #menu:checked + #close-menu, #menu:checked ~ #open-menu {
+    display: block;
+  }
+
+  
